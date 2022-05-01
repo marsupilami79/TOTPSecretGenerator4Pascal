@@ -1,0 +1,93 @@
+object MainForm: TMainForm
+  Left = 748
+  Height = 142
+  Top = 332
+  Width = 484
+  Caption = 'MainForm'
+  ClientHeight = 142
+  ClientWidth = 484
+  LCLVersion = '2.2.0.4'
+  object GenerateBtn: TButton
+    Left = 5
+    Height = 25
+    Top = 40
+    Width = 475
+    Caption = '&Generate TOTP Secret and URI'
+    OnClick = GenerateBtnClick
+    TabOrder = 0
+  end
+  object SecretEdt: TEdit
+    Left = 48
+    Height = 23
+    Top = 72
+    Width = 352
+    TabOrder = 1
+  end
+  object CopySecretBtn: TButton
+    Left = 405
+    Height = 25
+    Top = 70
+    Width = 75
+    Caption = '&Copy'
+    OnClick = CopySecretBtnClick
+    TabOrder = 2
+  end
+  object IssuerEdt: TEdit
+    Left = 48
+    Height = 23
+    Top = 8
+    Width = 136
+    TabOrder = 3
+  end
+  object AccountNameEdt: TEdit
+    Left = 288
+    Height = 23
+    Top = 8
+    Width = 128
+    TabOrder = 4
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 12
+    Width = 33
+    Caption = 'Issuer:'
+  end
+  object Label2: TLabel
+    Left = 200
+    Height = 15
+    Top = 12
+    Width = 83
+    Caption = 'Account Name:'
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 15
+    Top = 76
+    Width = 35
+    Caption = 'Secret:'
+  end
+  object UriEdt: TEdit
+    Left = 48
+    Height = 23
+    Top = 106
+    Width = 352
+    TabOrder = 5
+  end
+  object CopyUriBtn: TButton
+    Left = 405
+    Height = 25
+    Top = 104
+    Width = 75
+    Caption = '&Copy'
+    OnClick = CopyUriBtnClick
+    TabOrder = 6
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 15
+    Top = 110
+    Width = 21
+    Caption = 'URI:'
+  end
+end
